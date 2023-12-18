@@ -6,6 +6,7 @@
 public class PrintNumbersWithoutNumbers {
     public static void main(String[] args) {
 
+        //create numbers using ascii
         int one = 'A' / 'A';
         int hundred ='d';
 
