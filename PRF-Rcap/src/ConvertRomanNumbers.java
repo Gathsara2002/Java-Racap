@@ -28,23 +28,19 @@ public class ConvertRomanNumbers {
         int value = 0;
         int prevVal = 0;
 
+        for (int i = array.length ; i >= 1; i--) {
 
-        for (char c : array) {
+            char c = array[i-1];
+            //get each value when iterate
+            int val = map.get(c);
 
-            Integer x = map.get(c);
-
-            if (x > prevVal) {
-
-                int calValue = x - prevVal;
-                value = value + calValue;
-
+            if (prevVal > val) {
+                value = value - val;
             } else {
-
-                value += x;
-
+                value = value + val;
             }
 
-            prevVal = x;
+            prevVal = val;
 
         }
 
