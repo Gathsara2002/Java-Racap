@@ -8,7 +8,7 @@ public class PrintNumbersWithoutNumbers {
 
         //create numbers using ascii
         int one = 'A' / 'A';
-        int hundred ='d';
+        int hundred = 'd';
 
         for (int i = one; i <= hundred; i++) {
             System.out.println(i);

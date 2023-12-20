@@ -45,7 +45,7 @@ public class BinarySearch {
     public static void sortArray(int[] ar) {
 
         for (int j = 0; j < ar.length - 1; j++) {
-            for (int i = 0; i < ar.length-1; i++) {
+            for (int i = 0; i < ar.length - 1; i++) {
                 if (ar[i] > ar[i + 1]) {
                     int temp = ar[i + 1];
                     ar[i + 1] = ar[i];

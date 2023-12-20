@@ -28,9 +28,9 @@ public class ConvertRomanNumbers {
         int value = 0;
         int prevVal = 0;
 
-        for (int i = array.length ; i >= 1; i--) {
+        for (int i = array.length; i >= 1; i--) {
 
-            char c = array[i-1];
+            char c = array[i - 1];
             //get each value when iterate
             int val = map.get(c);
 
