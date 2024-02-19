@@ -1,5 +1,6 @@
 import javax.jws.Oneway;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.function.Consumer;
 
 /**
@@ -19,13 +20,17 @@ public class ForEachMethod {
         nums.add(7);
         nums.add(8);
 
-        Consumer<Integer> consumer = new Consumer() {
+        //normal flow --------------------------------
+        /*Consumer<Integer> consumer = new Consumer() {
             @Override
             public void accept(Object n) {
                 System.out.println(n);
             }
-        };
+        };*/
 
+        //with lambda
+        Consumer<Integer> consumer = n -> System.out.println(n);
         nums.forEach(consumer);
+
     }
 }
