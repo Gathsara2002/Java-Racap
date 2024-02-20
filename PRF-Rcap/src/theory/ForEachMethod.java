@@ -1,9 +1,6 @@
 package theory;
 
-import javax.jws.Oneway;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.function.Consumer;
 
 /**
  * @author : Gathsara
@@ -31,8 +28,12 @@ public class ForEachMethod {
         };*/
 
         //with lambda
-        Consumer<Integer> consumer = n -> System.out.println(n);
-        nums.forEach(consumer);
+        nums.forEach(n -> System.out.println(n));
+
+
+        /*forEach() method eka argument ekak vidiyata consumer ekak gannava.consumer kiyanne functional interface ekak.
+         e nisa consumer eka annonymous inner class ekak vidiyata liyanne natuva lambda expression use karala forEach
+         eka atulema apata avshya process eka karaganna puluvn*/
 
     }
 }
