@@ -1,3 +1,5 @@
+package coding_tasks;
+
 import java.util.Scanner;
 
 /**
