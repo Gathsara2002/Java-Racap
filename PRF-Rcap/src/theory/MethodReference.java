@@ -8,6 +8,12 @@ import java.util.List;
  * created : 2/21/2024 -- 9:29 PM
  **/
 
+class MyPrinter{
+    public  void printer(String str){
+        System.out.println("Printer print - "+str);
+    }
+}
+
 public class MethodReference {
     public static void main(String[] args) {
 
@@ -16,6 +22,9 @@ public class MethodReference {
 
         /*Method references are a special type of lambda expressions. They’re often used to create simple lambda
         expressions by referencing existing methods.*/
+
+        MyPrinter myPrinter = new MyPrinter();
+        myPrinter.printer("Gathsara");
 
     }
 }
