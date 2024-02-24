@@ -1,8 +1,6 @@
 package theory;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * @author : Gathsara
@@ -25,6 +23,19 @@ public class FileIO {
                 writer.write("\n" + name);
             }
             writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        //read from file
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("E:\\PRF Assignments\\Working\\PRF\\OutputFile.txt"));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
