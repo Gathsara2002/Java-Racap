@@ -8,9 +8,9 @@ import java.util.List;
  * created : 2/21/2024 -- 9:29 PM
  **/
 
-class MyPrinter{
-    public  void printer(String str){
-        System.out.println("Printer print - "+str);
+class MyPrinter {
+    public void printer(String str) {
+        System.out.println("Printer print - " + str);
     }
 }
 

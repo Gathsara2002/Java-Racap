@@ -27,7 +27,7 @@ public class LambdaExpression {
 
 
         //with anonymous inner class
-        Lambda lambda1=new Lambda() {
+        Lambda lambda1 = new Lambda() {
             @Override
             public void onlyOneMethod() {
                 System.out.println("Inner class");
@@ -37,7 +37,7 @@ public class LambdaExpression {
 
 
         //with lambda expression
-        Lambda lambda2=() -> {
+        Lambda lambda2 = () -> {
             System.out.println("Lambda expression");
         };
         lambda2.onlyOneMethod();
